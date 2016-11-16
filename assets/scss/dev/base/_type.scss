@@ -1,0 +1,85 @@
+h1.header {
+	@extend .center, .thin;
+	transition: color 1s ease-in-out;
+	@media #{$small-and-down} {
+		font-size: 2.5rem;
+		font-weight: 300;
+	}
+}
+
+h4.header {
+	@extend .center, .thin;
+	transition: color 1s ease-in-out;
+	@media #{$small-and-down} {
+		font-size: 1.8rem;
+		font-weight: 300;
+	}
+}
+
+h5.header {
+	@extend .center, .thin;
+	transition: color 1s ease-in-out;
+	@media #{$small-and-down} {
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+}
+
+#intro {
+	&.light-text {
+		h1.header {
+			@extend .blue-grey-text, .text-lighten-4;
+			transition: color 1s ease-in-out 1s;
+		}
+		h4.header,
+		h5.header {
+			@extend .blue-grey-text, .text-lighten-3;
+			transition: color 1s ease-in-out 1s;
+		}
+	}
+	&.dark-text {
+		h1.header {
+			@extend .black-text;
+		}
+		h4.header,
+		h5.header {
+			@extend .black-text;
+		}
+		&.init-text {
+			h1.header {
+				@extend .blue-grey-text, .text-lighten-4;
+				transition: color 1s ease-in-out 1s;
+			}
+			h4.header,
+			h5.header {
+				@extend .blue-grey-text, .text-lighten-3;
+				transition: color 1s ease-in-out 1s;
+			}
+		}
+	}
+}
+
+p {
+	line-height: 2.8rem;
+}
+
+.text-shadow {
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow--light {
+	text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.typed-cursor {
+	@extend .blue-grey-text;
+	display: none;
+	opacity: 1;
+	transition: opacity 1s ease-in;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

@@ -1,0 +1,38 @@
+body, .fullscreen, #intro, #intro .parallax-container {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+#intro {
+	h5 {
+		position: absolute;
+		width: 100%;
+		bottom: 5rem;
+		left: 0;
+		text-align: center;
+		@media #{$small-and-down} {
+			bottom: 10%;
+		}
+	}
+}
+
+main {
+	flex: 1 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	.section {
+		&:first-child {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.container {
+	max-width: 1100px;
+}
+

@@ -1,0 +1,140 @@
+nav {
+	ul {
+		a {
+			@extend .grey-text, .text-darken-3;
+		}
+	}
+	.brand-logo {
+		@extend .grey-text, .text-darken-3;
+	}
+}
+
+.button-collapse {
+	@extend .grey-text, .text-darken-3;
+}
+
+.brand-logo {
+	position: relative;
+	width: 100px;
+	height: inherit;
+	padding: 0.5rem 0 !important;
+	img {
+		position: absolute;
+		left: 0.5rem;
+		max-height: 100%;
+		transition: opacity 1s ease-in-out;
+		@media (max-height: 500px) {
+			left: 1.25rem;
+		}
+		@media #{$large-and-up} {
+			left: 0;
+		}
+	}
+}
+
+.main-nav {
+	background-color: transparent !important;
+	position: absolute;
+	box-shadow: none;
+	height: 8rem;
+	top: 10%;
+	@media (max-height: 500px) {
+		height: 6rem;
+	}
+	@media #{$large-and-up} {
+		height: 10rem;
+	}
+	a {
+		transition: color 1s ease-in-out;
+		&:hover {
+			background-color: transparent !important;
+		}
+	}
+	.mobile-menu-btn {
+		margin-top: -4rem;
+		@media (max-height: 600px) {
+			margin-top: -2rem;
+		}
+	}
+	&.light-scheme {
+		.brand-logo {
+			img {
+				transition: opacity 1s ease-in-out 1s;
+				&.logo-light {
+					opacity: 0.8;
+				}
+				&.logo-dark {
+					opacity: 0;
+				}
+			}
+		}
+		a {
+			@extend .white-text;
+			transition: color 1s ease-in-out 1s;
+		}
+	}
+	&.dark-scheme {
+		.brand-logo {
+			.logo-light {
+				opacity: 0;
+			}
+			.logo-dark {
+				opacity: 0.8;
+			}
+		}
+		a {
+			@extend .black-text;
+		}
+	}
+	&.dark-scheme.init-scheme {
+		.brand-logo {
+			img {
+				transition: opacity 1s ease-in-out 1s;
+				&.logo-light {
+					opacity: 0.8;
+				}
+				&.logo-dark {
+					opacity: 0;
+				}
+			}
+		}
+		a {
+			@extend .white-text;
+			transition: color 1s ease-in-out 1s;
+		}
+	}
+}
+
+.side-nav {
+	.logo {
+		.brand-logo {
+			padding: 0.5rem 0 0 !important;
+			&:hover {
+				background-color: inherit;
+			}
+		}
+	}
+	.side-nav-items {
+		margin-top: 0;
+	}
+	li > a > i {
+		&.fa,
+		&.devicon {
+			&:before {
+				float: left;
+				font-size: 22px;
+				padding-left: 3px;
+				line-height: $sidenav-item-height;
+				margin: 0 ($sidenav-padding * 2) 0 0;
+				width: $sidenav-item-height / 2;
+				color: rgba(0,0,0,.54);
+			}
+		}
+		&.devicon {
+			&:before {
+				font-size: 18px;
+			}
+		}
+	}
+}
+

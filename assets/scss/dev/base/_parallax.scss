@@ -1,0 +1,40 @@
+.parallax-container {
+	min-height: 380px;
+	line-height: 0;
+	height: auto;
+	color: rgba(255,255,255,.9);
+	.section {
+		width: 100%;
+		position: absolute;
+		top: 40%;
+		left: 0;
+		@media #{$small-and-down} {
+			top: 50%;
+			margin-top: -5rem;
+		}
+		@media (max-height: 600px) {
+			top: 55%;
+		}
+	}
+	.parallax {
+		#intro & {
+			opacity: 0;
+			transition: opacity 1s ease-in-out 1s;
+			&.active {
+				opacity: 1;
+				transition: opacity 1s ease-in-out;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-image: url('../../img/fresh_snow.png');
+				opacity: 0.15;
+				z-index: 1;
+			}
+		}
+	}
+}

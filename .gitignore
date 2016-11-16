@@ -1,0 +1,10 @@
+*.DS_Store
+.htaccess
+*.sass-cache/*
+node_modules/
+*/cache*
+*.kdev4*
+*.swp
+*test*
+*.log
+README.md
