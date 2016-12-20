@@ -4,6 +4,8 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.carousel').carousel();
+    // $('.modal').modal();
+    $('.tooltip').tooltip();
 
     $(window).on('load', function() {
 
