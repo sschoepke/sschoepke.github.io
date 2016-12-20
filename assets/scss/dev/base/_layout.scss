@@ -1,6 +1,7 @@
 body, .fullscreen, #intro, #intro .parallax-container {
 	display: flex;
 	min-height: 100vh;
+	max-height: 100vh;
 	flex-direction: column;
 }
 
@@ -12,7 +13,7 @@ body, .fullscreen, #intro, #intro .parallax-container {
 		left: 0;
 		text-align: center;
 		@media #{$small-and-down} {
-			bottom: 10%;
+			bottom: 15%;
 		}
 	}
 }
