@@ -12,7 +12,7 @@
 		<link href="assets/css/prod/screen.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
-		<nav class="main-nav dark-scheme init-scheme" role="navigation">
+		<nav class="secondary-nav dark-scheme" role="navigation">
 			<div class="nav-wrapper container">
 				<a id="logo-container" href="http://sschoepke.com" class="brand-logo center">
 					<img class="responsive-img logo-light" src="assets/img/ss-logo-white.svg" />
@@ -26,6 +26,7 @@
 		</nav>
 
 		<ul id="projects-nav" class="side-nav">
+			<li><a href="http://sschoepke.com"><i class="material-icons">home</i> Home</a></li>
 			<li><a class="blue-grey darken-3 subheader white-text">Plugins</a></li>
 			<li><a href="/momentum"><i class="devicon devicon-jquery-plain"></i> Momentum.js</a></li>
 			<li><a href="https://github.com/sschoepke/custom-wp-content-management"><i class="fa fa-wordpress"></i> Content Management</a></li>
@@ -39,80 +40,16 @@
 		</ul>
 
 		<main id="main-content">
-			<div id="page-intro" class="section scrollspy fullscreen">
-				<section id="intro" class="dark-text init-text">
-					<div class="parallax-container valign-wrapper">
-						<div class="section valign">
-							<div class="container">
-								<div class="row center">
-									<h1 class="header"><span class="my-name">@s</span>schoepke</h1>
-									<h4 class="header"><span class="subhead"></span></h4>
-								</div>
-							</div>
-						</div>
-						<h5 class="header"><span class="location"></span></h5>
-						<span class="background-imgs">
-							<div class="parallax active">
-								<img src="assets/img/snow.gif" alt="winter">
-							</div>
-							<div class="parallax">
-								<img src="assets/img/rain-min.gif" alt="spring">
-							</div>
-							<div class="parallax">
-								<img src="assets/img/ocean-min.gif" alt="summer">
-							</div>
-							<div class="parallax">
-								<img src="assets/img/leaves-min.gif" alt="fall">
-							</div>
-						</span>
-					</div>
-				</section>
-			</div>
-		</main>
-
-		<section id="contact-section">
-			<div id="contact-container" class="section scrollspy">
+			<div id="thanks" class="section fullscreen">
 				<div class="container">
 					<div class="row">
-						<div class="col s12">
-							<h4 class="header">contact me</h4>
+						<div class="col s12 center">
+							<h4 class="header">Thanks, I'll be in touch shortly!</h4>
 						</div>
-					</div>
-					<div class="row">
-						<form class="col s12" method="POST" action="https://formspree.io/smschoepke@gmail.com" id="contact-form">
-							<input type="text" name="_gotcha" style="display:none" />
-							<input type="hidden" name="_next" value="http://sschoepke.com/thanks.html" />
-							<div class="row">
-								<div class="input-field col s12 l6">
-									<i class="material-icons prefix">account_box</i>
-									<input id="name" type="text" class="validate" name="Name">
-									<label for="name">Name</label>
-								</div>
-								<div class="input-field col s12 l6">
-									<i class="material-icons prefix">mail</i>
-									<input id="email" type="email" class="validate" name="Email">
-									<label for="email">Email</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<i class="material-icons prefix">message</i>
-									<textarea id="message" class="materialize-textarea" name="Message"></textarea>
-									<label for="message">Message</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col s12 center">
-									<button class="btn waves-effect waves-light" type="submit" name="action">
-										Send <i class="material-icons right">send</i>
-									</button>
-								</div>
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>
-		</section>
+		</main>
 
 		<footer id="page-footer" class="page-footer blue-grey darken-3">
 			<div class="container">
