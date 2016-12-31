@@ -6,6 +6,7 @@
     $('.carousel').carousel();
     // $('.modal').modal();
     $('.tooltip').tooltip();
+    $('.scrollspy').scrollSpy();
 
     $(window).on('load', function() {
 

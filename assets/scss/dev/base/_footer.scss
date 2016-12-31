@@ -1,0 +1,26 @@
+.footer-logo {
+	max-height: 8rem;
+	margin: 0 auto;
+	opacity: 0.25;
+}
+.footer-copyright {
+	clear: both;
+}
+footer.page-footer {
+	margin-top: 0;
+}
+.page-footer .container .row {
+	height: inherit;
+}
+.page-footer .container .row .col {
+	height: inherit;
+}
+
+@media only screen and (min-width: 992px) {
+	.page-footer .container {
+		height: 25rem;
+	}
+	.footer-logo {
+		max-height: 15rem;
+	}
+}
