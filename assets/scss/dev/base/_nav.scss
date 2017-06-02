@@ -137,5 +137,15 @@ nav {
 			}
 		}
 	}
+	.subheader {
+		i {
+			&.fa,
+			&.devicon {
+				&:before {
+					color: #fff;
+				}
+			}
+		}
+	}
 }
 
