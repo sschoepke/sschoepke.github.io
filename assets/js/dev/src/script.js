@@ -47,7 +47,7 @@
 	    });
 
 	    $('.subhead').typed({
-	    	strings: ['web^300 ^500developer^800'],
+	    	strings: ['creative^300 ^500developer^800'],
 	    	typeSpeed: 50,
 	    	startDelay: 3000,
 	    	preStringTyped: function() {
