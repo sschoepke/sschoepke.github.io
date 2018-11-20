@@ -27,6 +27,26 @@ main {
 	}
 }
 
+.page-block {
+	&:nth-child(odd) {
+		@extend .blue-grey, .darken-4, .blue-grey-text, .text-lighten-5;
+		position: relative;
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: url('../../img/fresh_snow.png');
+			opacity: 0.1;
+			& + .container {
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+}
+
 .page-section {
 	padding-top: 4rem;
 	padding-bottom: 4rem;

@@ -25,6 +25,10 @@ h5.header {
 	}
 }
 
+.page-text-reg {
+	font-size: 1.4rem;
+}
+
 #intro {
 	&.light-text {
 		h1.header {
@@ -55,6 +59,14 @@ h5.header {
 				@extend .blue-grey-text, .text-lighten-3;
 				transition: color 1s ease-in-out 1s;
 			}
+		}
+	}
+}
+
+#project-container {
+	.card {
+		.card-content {
+			@extend .blue-grey-text, .text-darken-4;
 		}
 	}
 }

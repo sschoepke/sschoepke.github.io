@@ -1,0 +1,15 @@
+#project-container {
+	.card {
+		.card-image {
+			border-bottom: 1px solid map-get($blue-grey, "lighten-4");
+		}
+	}
+}
+
+#about-section {
+	.responsive-img {
+		@media #{$small-and-down} {
+			max-width: 200px;
+		}
+	}
+}

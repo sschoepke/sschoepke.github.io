@@ -18,7 +18,6 @@
 			<div class="nav-wrapper container">
 				<a id="logo-container" href="http://sschoepke.com" class="brand-logo center">
 					<img class="responsive-img logo-light" src="assets/img/ss-logo-white.svg" />
-					<img class="responsive-img logo-dark" src="assets/img/ss-logo.svg" />
 				</a>
 				<ul class="right hide-on-med-and-down">
 					<li><a class="button-collapse show-on-large" href="#" data-activates="projects-nav"><i class="material-icons">menu</i></a></li>
@@ -61,22 +60,122 @@
 							<div class="parallax active">
 								<img src="assets/img/snow.gif" alt="winter">
 							</div>
-							<div class="parallax">
-								<img src="assets/img/rain-min.gif" alt="spring">
-							</div>
-							<div class="parallax">
-								<img src="assets/img/ocean-min.gif" alt="summer">
-							</div>
-							<div class="parallax">
-								<img src="assets/img/leaves-min.gif" alt="fall">
-							</div>
 						</span>
 					</div>
 				</section>
 			</div>
 		</main>
 
-		<section id="contact-section">
+		<section id="project-section" class="page-block">
+			<div id="project-container" class="page-section scrollspy">
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<h4 class="header">a few projects</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m6 l4 center">
+							<a href="https://iapp.org">
+								<div class="card hoverable">
+									<div class="card-image">
+										<img src="assets/img/iapp.png" alt="IAPP">
+									</div>
+									<div class="card-content">
+										<p>IAPP</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col s12 m6 l4 center">
+							<a href="https://jacobsformayor.com">
+								<div class="card hoverable">
+									<div class="card-image">
+										<img src="assets/img/jacobsformayor.png" alt="Jacobs for Mayor">
+									</div>
+									<div class="card-content">
+										<p>Jacobs for Mayor</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col s12 m6 l4 center">
+							<a href="http://lnkpartners.com">
+								<div class="card hoverable">
+									<div class="card-image">
+										<img src="assets/img/lnkpartners.png" alt="LNK Partners">
+									</div>
+									<div class="card-content">
+										<p>LNK Partners</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col s12 m6 l4 center">
+							<a href="http://sschoepke.com/momentum">
+								<div class="card hoverable">
+									<div class="card-image">
+										<img src="assets/img/momentumjs.png" alt="momentum.js">
+									</div>
+									<div class="card-content">
+										<p>momentum.js</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col s12 m6 l4 center">
+							<a href="https://bradleyclark.com">
+								<div class="card hoverable">
+									<div class="card-image">
+										<img src="assets/img/bradleyclark.png" alt="Clark Asset Management, LLC">
+									</div>
+									<div class="card-content">
+										<p>Clark Asset Management, LLC</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col s12 m6 l4 center">
+							<a href="http://fivelinecreative.com">
+								<div class="card hoverable">
+									<div class="card-image">
+										<img src="assets/img/fiveline.png" alt="Five Line Creative">
+									</div>
+									<div class="card-content">
+										<p>Five Line Creative</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about-section" class="page-block">
+			<div id="about-container" class="page-section scrollspy">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<h4 class="header">about me</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m3 l2 center">
+							<img src="assets/img/LI-headshot.jpg" class="responsive-img circle" alt="Stephen Schoepke">
+						</div>
+						<div class="col s12 m8 l9 offset-m1 offset-l1">
+							<p class="page-text-reg thin">I'm Stephen Schoepke, a developer, designer, and technology leader in Portsmouth, New Hampshire.</p>
+							<p class="page-text-reg thin">I currently serve as IT Director at the International Association of Privacy Professionals, the world's largest information privacy and data protection organization, where I manage the software development, infrastructure, and IT service teams. For several years I served as lead developer and designer for the IAPP website and other software while maintaining a busy freelance web dev business on the side.</p>
+							<p class="page-text-reg thin">Find me on <a href="https://www.linkedin.com/in/stephenschoepke" class="white-text"><strong>LinkedIn</strong></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact-section" class="page-block">
 			<div id="contact-container" class="page-section scrollspy">
 				<div class="container">
 					<div class="row">
@@ -120,7 +219,7 @@
 			</div>
 		</section>
 
-		<footer id="page-footer" class="page-footer blue-grey darken-3">
+		<footer id="page-footer" class="page-footer blue-grey darken-4">
 			<div class="container">
 				<div class="row">
 					<div class="col s12 valign-wrapper">
@@ -134,18 +233,6 @@
 				</div>
 			</div>
 		</footer>
-
-		<!-- Analytics -->
-		<!-- <script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-38979527-1', 'auto');
-			ga('send', 'pageview');
-
-		</script> -->
 
 		<!-- Scripts-->
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -10,29 +10,29 @@
 
     $(window).on('load', function() {
 
-    	function rotateBgs() {
-	    	var el = $('.background-imgs .parallax'),
-				index = 0,
-				inc = function() {
-					el.removeClass('active');
-					el.eq(index++).addClass('active');
-					$('.main-nav').toggleClass('light-scheme dark-scheme');
-					$('#intro').toggleClass('light-text dark-text');
-				};
+    // 	function rotateBgs() {
+	   //  	var el = $('.background-imgs .parallax'),
+				// index = 0,
+				// inc = function() {
+				// 	el.removeClass('active');
+				// 	el.eq(index++).addClass('active');
+				// 	$('.main-nav').toggleClass('light-scheme dark-scheme');
+				// 	$('#intro').toggleClass('light-text dark-text');
+				// };
 
-				setInterval( function() {
-					$('.main-nav').removeClass('init-scheme');
-					$('#intro').removeClass('init-text');
-					if  (index < el.length) {
-						inc();
-					} else {
-						index = 0;
-						inc();
-					}
-				}, 5500);
-	    }
+				// setInterval( function() {
+				// 	$('.main-nav').removeClass('init-scheme');
+				// 	$('#intro').removeClass('init-text');
+				// 	if  (index < el.length) {
+				// 		inc();
+				// 	} else {
+				// 		index = 0;
+				// 		inc();
+				// 	}
+				// }, 5500);
+	   //  }
 
-	    rotateBgs();
+	    // rotateBgs();
 
 		$('.my-name').typed({
 	        strings: ['stephen^800'],
@@ -72,5 +72,5 @@
 
 	});
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  }); 
+})(jQuery); 
